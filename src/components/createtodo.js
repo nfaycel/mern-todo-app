@@ -34,7 +34,7 @@ export default function CreateTodo(props) {
     };
     axios
       .post("http://localhost:4000/todos/add", newTodo)
-      .then((res) => console.log(res.data)).then(() => props.history.push("/"));;
+      .then((res) => console.log(res.data)).then(() => props.history.push("/"));
     set_todo_description("");
     set_todo_responsible("");
     set_todo_priority("");
